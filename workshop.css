@@ -1,0 +1,156 @@
+/* Estilos básicos para a página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #00a5b8;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header div img{
+    width: 10px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+.buttons {
+    margin-right: 20px;
+}
+
+.botao {
+    background-color: #007B8F;
+    border: 2px solid rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #005f6b;
+}
+
+/* Estilos para o conteúdo principal */
+.main-content {
+    padding: 20px;
+}
+
+.header-section {
+    position: relative;
+    text-align: center;
+}
+
+.header-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.header-section h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.header-section p {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+}
+#mover-image {
+    width: 280px;
+    height: auto;
+    position: relative;
+    top: -10px;
+    
+    
+}
+
+.workshops {
+    margin-top: 20px;
+}
+
+.workshop-item {
+    display: flex;
+    background-color: #e3f2fd;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.course-icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.course-info {
+    flex: 1;
+}
+
+.course-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.course-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.rating {
+    font-size: 18px;
+    color: #FFD700;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    .header-section h1 {
+        font-size: 36px;
+    }
+
+    .botao {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
