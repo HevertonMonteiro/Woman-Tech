@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Woman Tech</title>
+    <link rel="stylesheet" href="cadastro.css"> 
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho com botões de navegação -->
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Woman Tech</h1>
+                </div>
+                
+            <div>  
+                <img src="imagens/logo-womantech.png" alt="Imagem Exemplo" id="mover-image">
+            </div>
+            </div>
+        </header>
+
+        <!-- Conteúdo principal -->
+        <main class="main-content">
+            <section class="form-section">
+                <h2>Cadastro</h2>
+                <form action="processar_cadastro.php" method="POST">
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" required>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="submit-btn" onclick="window.location.href='pagina1.html'">Confirmar</button>
+                    </div>
+                    <div class="cadastrado">
+                        <button  class="login" onclick="window.location.href='cadastro.html'">Cadastar</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
