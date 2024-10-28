@@ -187,3 +187,23 @@ p {
     }
 }
 
+/* Responsividade */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    .header-section h1 {
+        font-size: 36px;
+    }
+
+    .botao {
+        margin: 10px 0;
+        width: 70%;
+        text-align: center;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
