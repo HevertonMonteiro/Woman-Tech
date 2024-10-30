@@ -1,0 +1,9 @@
+br\com\Woman\tech\WomanTech\Controller\usuarioController.class
+br\com\Woman\tech\WomanTech\Model\usuario.class
+br\com\Woman\tech\WomanTech\Service\usuarioCursoRepository.class
+br\com\Woman\tech\WomanTech\WomanTechApplication.class
+br\com\Woman\tech\WomanTech\Model\cursos.class
+br\com\Woman\tech\WomanTech\Model\usuarioCursos.class
+br\com\Woman\tech\WomanTech\Service\usuarioRespository.class
+br\com\Woman\tech\WomanTech\Controller\matricularController.class
+br\com\Woman\tech\WomanTech\Service\usuarioService.class
