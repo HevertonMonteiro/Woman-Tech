@@ -8,8 +8,8 @@ import jakarta.persistence.Id;
 public class usuario {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // ou GenerationType.AUTO
-    private Long id; // Chave primária
+    @GeneratedValue(strategy = GenerationType.AUTO) // ou GenerationType.AUTO
+    private int id; // Chave primária
     private  String nome;
     private  String email;
     private  String senha;
@@ -55,13 +55,12 @@ public class usuario {
     public void setCpf(Number cpf) {
         this.cpf = cpf;
     }
-    public Long getId() {
+
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
-
-
 }

@@ -3,8 +3,6 @@ package br.com.Woman.tech.WomanTech.Controller;
 import br.com.Woman.tech.WomanTech.Model.usuario;
 import br.com.Woman.tech.WomanTech.Service.usuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,9 +16,10 @@ public class usuarioController {
     private usuarioService usuarioService;   // importando a classe do service
 
     @PostMapping // metodo do tipo post
-    public ResponseEntity<usuario> criarUsuario(@RequestBody usuario usuario) {
+    public String criarUsuario(@RequestBody usuario usuario) {
         usuario novoUsuario = usuarioService.criarUsuario(usuario);
-        return new ResponseEntity<>(novoUsuario, HttpStatus.CREATED);
+        //return new ResponseEntity<>(novoUsuario, HttpStatus.CREATED);
+        return "Usuario Criado";
     }
 
 }

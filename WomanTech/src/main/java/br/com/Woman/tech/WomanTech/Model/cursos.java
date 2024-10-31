@@ -1,11 +1,13 @@
 package br.com.Woman.tech.WomanTech.Model;
 
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-
+@Entity
 public class cursos {
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // ou GenerationType.AUTO
     public Long getId() {
         return id;
     }
