@@ -4,28 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro - Woman Tech</title>
+    <script src="cadastro.js"></script>
     <link rel="stylesheet" href="cadastro.css"> 
 </head>
 <body>
-    <div class="container">
-        <!-- Cabeçalho com botões de navegação -->
-        <header>
-            <div class="header-content">
-                <div class="logo">
-                    <h1>Woman Tech</h1>
-                </div>
-                
-            <div>  
-                <img src="imagens/logo-womantech.png" alt="Imagem Exemplo" id="mover-image">
-            </div>
-            </div>
-        </header>
+    <script src="cadastro.js"></script>
+    <!-- Vídeo de fundo -->
+    <video autoplay muted loop id="background-video">
+        <source src="videos/video.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+    </video>
 
-        <!-- Conteúdo principal -->
+    <!-- Conteúdo da página -->
+
+                
+                    <img src="imagens/logo-womantech.png" alt="Imagem Exemplo" id="mover-image">
+                
+
         <main class="main-content">
             <section class="form-section">
                 <h2>Cadastro</h2>
-                <form action="processar_cadastro.php" method="POST">
+                <form id="formCadastro" method="POST">
                     <div class="form-group">
                         <label for="nome">Nome Completo:</label>
                         <input type="text" id="nome" name="nome" required>
@@ -59,8 +58,9 @@
                     <div class="form-group">
                         <button type="submit" class="submit-btn">Cadastrar</button>
                     </div>
+
                     <div class="cadastrado">
-                        <button  class="login" onclick="window.location.href='login.html'">Já tenho uma Conta</button>
+                        <button class="login" onclick="window.location.href='login.html'">Já tenho uma Conta</button>
                     </div>
                 </form>
             </section>

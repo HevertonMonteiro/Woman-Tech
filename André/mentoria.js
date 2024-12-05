@@ -1,5 +1,5 @@
 // Função para enviar a mensagem do usuário
-function sendMessage() {
+ /* function sendMessage() {
     const inputField = document.getElementById('message-input');
     const messageText = inputField.value;
 
@@ -30,3 +30,4 @@ function sendMessage() {
         chatBox.scrollTop = chatBox.scrollHeight; // Rola para a última mensagem
     }, 1000);
 }
+*/

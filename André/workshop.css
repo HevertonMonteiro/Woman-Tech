@@ -11,46 +11,47 @@ body {
     margin: 0 auto;
 }
 
-/* Estilos para o cabeçalho */
+/* Estilo do cabeçalho */
 header {
-    background-color: #00a5b8;
+    background-color: #2c3e50; /* Cor do cabeçalho */
+    color: white;
     padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-header div img{
-    width: 10px;
-}
-
-.header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 8px;
+}
+header img {
+    max-height: 20px;
 }
 
-.logo h1 {
-    margin-left: 20px;
-    font-size: 24px;
-}
-
-.buttons {
-    margin-right: 20px;
+header .buttons {
+    display: flex;
+    gap: 20px;
 }
 
 .botao {
-    background-color: #007B8F;
-    border: 2px solid rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
     padding: 10px 20px;
-    margin-left: 10px;
-    cursor: pointer;
     border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #00a5b8;
+    color: rgb(255, 255, 255);
+}
+
+#logout-btn {
+    background-color: #f3bfb9;
+    border: none;
+    color: white;
+    padding: 10px 20px;
     font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.botao:hover {
-    background-color: #005f6b;
+#logout-btn:hover {
+    background-color: #f0bfb9;
 }
 
 /* Estilos para o conteúdo principal */
@@ -87,13 +88,12 @@ header div img{
     color: white;
     font-size: 24px;
 }
+
 #mover-image {
     width: 280px;
     height: auto;
     position: relative;
     top: -10px;
-    
-    
 }
 
 .workshops {
@@ -107,6 +107,7 @@ header div img{
     margin-bottom: 10px;
     border-radius: 10px;
     align-items: center;
+    position: relative;
 }
 
 .course-icon {
@@ -129,28 +130,12 @@ header div img{
     margin-bottom: 10px;
 }
 
-.rating {
-    font-size: 18px;
-    color: #FFD700;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .header-content {
-        flex-direction: column;
-    }
-
-    .header-section h1 {
-        font-size: 36px;
-    }
-
-    .botao {
-        margin: 10px 0;
-        width: 100%;
-        text-align: center;
-    }
-
-    .container {
-        padding: 10px;
-    }
+.inscricao {
+    background-color: #40afc0;
+    border: 2px solid rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5
 }

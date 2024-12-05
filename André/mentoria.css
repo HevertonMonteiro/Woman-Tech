@@ -1,4 +1,5 @@
 /* Estilos Globais */
+/*
 * {
     margin: 0;
     padding: 0;
@@ -61,8 +62,10 @@ header div img{
 
 
 /* Estilos do chat */
+/*
 .chat-container {
     margin-top: 100px; /* Espaço para o cabeçalho fixo */
+    /*
     max-width: 600px;
     margin: 100px auto 0;
     padding: 20px;
@@ -123,6 +126,7 @@ header div img{
 }
 
 /* Responsividade */
+/*
 @media (max-width: 768px) {
     .header-content {
         flex-direction: column;

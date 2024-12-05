@@ -14,7 +14,7 @@ public class usuario {
     private  String email;
     private  String senha;
     private  String AreadeAtuacao;
-    private  Number cpf;
+    private  String cpf;
 
     public String getNome() {
         return nome;
@@ -48,11 +48,11 @@ public class usuario {
         this.senha = senha;
     }
 
-    public Number getCpf() {
+    public String getCpf() {
         return cpf;
     }
 
-    public void setCpf(Number cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 
